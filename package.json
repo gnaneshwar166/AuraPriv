@@ -1,0 +1,22 @@
+{
+  "name": "ai-adaptive-ephemeral-privacy-system",
+  "version": "1.0.0",
+  "description": "AI-Adaptive Ephemeral Privacy Communication System",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "test": "npm --prefix server test",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "privacy",
+    "ephemeral",
+    "ai-guardian",
+    "socket.io",
+    "react",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT"
+}
