@@ -4,6 +4,7 @@
   "description": "Backend for AI-Adaptive Ephemeral Privacy Communication System",
   "main": "src/server.js",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
