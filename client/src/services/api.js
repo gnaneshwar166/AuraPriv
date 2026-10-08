@@ -3,7 +3,8 @@
  * REST client for Room creation and lookup.
  */
 
-const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_BACKEND_URL || 
+  (typeof window !== 'undefined' && window.location.port !== '5173' ? '' : 'http://localhost:5000');
 
 export async function createRoomApi(ttlMinutes = 30, roomType = 'group') {
   const response = await fetch(`${API_BASE}/api/rooms`, {

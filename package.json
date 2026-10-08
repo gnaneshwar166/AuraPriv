@@ -1,13 +1,16 @@
 {
   "name": "ai-adaptive-ephemeral-privacy-system",
   "version": "1.0.0",
+  "type": "module",
   "description": "AI-Adaptive Ephemeral Privacy Communication System",
   "scripts": {
     "install:all": "npm --prefix server install && npm --prefix client install",
     "test": "npm --prefix server test",
     "dev:server": "npm --prefix server run dev",
     "dev:client": "npm --prefix client run dev",
-    "build:client": "npm --prefix client run build"
+    "build:client": "npm --prefix client run build",
+    "build": "node scripts/build-all.js",
+    "start": "node server/src/server.js"
   },
   "keywords": [
     "privacy",

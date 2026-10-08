@@ -5,7 +5,8 @@
 
 import { io } from 'socket.io-client';
 
-const SOCKET_SERVER_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+const SOCKET_SERVER_URL = import.meta.env.VITE_BACKEND_URL || 
+  (typeof window !== 'undefined' && window.location.port !== '5173' ? window.location.origin : 'http://localhost:5000');
 
 export const socket = io(SOCKET_SERVER_URL, {
   autoConnect: false,
